@@ -1,0 +1,16 @@
+<operador> ::= +|*|/|% 
+<digito> ::= 0|1|2|3|4|5|6|7|8|9
+<logico> ::= |>|<|==|<=|>=|!=
+<letra> ::= "a"|"b"|"c"|"d"|"e"|"f"|"g"|"h"|"i"|"j"|"k"|"l"|"m"|"n"|"o"|"p"|"q"|"r"|"s"|"t"|"u"|"v"|"w"|"x"|"y"|"z"|"A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|""Q"|"R"|"S"|"T"|"U"|"V"|"W"|"X"|"Y"|"Z"
+<numero> ::= <digito> | "." <digito>+ | <digito>+ "." <digito>+
+<identificador> ::= <letra> | <letra>{<letra>|<digito>}
+<condicao> ::= "(" <identificador><logico><identificador> | <numero> ")" {"AND" | "OR"} "("{<identificador><logico><identificador> | <numero>}*")" 
+| {<identificador> NOT {<identificador><lógico> <identificador> | <numero>} {{"AND" | "OR"} <identificador><logico>{<identificador> | <numero>}*}* ")" 
+<comando> ::= <condicional> | <iterativo> | <atribuicao> | ε
+<condicional> ::= "if" <condicao> "then" <comando> ";" | "if" <condicao> "then" <comando> "else" <comando> ";"" 
+<iterativo> ::= "while <condicao> {<comando>|"begin" <comando>+ "end"} ";" 
+<expressao> ::= <numero> | "(" {<expressão><operador><expressão>}")"
+<atribuicao> ::= <identificador> "=" {<expressão> | <identificador>} ({<operador> <expressao> | <identificador>})* ";" 
+<tipo> ::= "var"<identificador>{","<identificador>}*":"{"integer" | "real" | "char"}";" 
+<inicio> = "begin"<tipo>*<comando>*"end."
+
