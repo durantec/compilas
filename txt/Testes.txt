@@ -1,0 +1,186 @@
+Utilizando o código: 
+begin
+	var a,b: integer;
+	if (a>10) then b = b + 1;
+end.
+
+Obtemos:
+[	begin	] ==> palavraReservada	(linha: 0 - coluna: 0)
+[	var	] ==> palavraReservada	(linha: 1 - coluna: 1)
+[	a	] ==> identificador	(linha: 1 - coluna: 5)
+[	,	] ==> simboloEspecial	(linha: 1 - coluna: 6)
+[	b	] ==> identificador	(linha: 1 - coluna: 7)
+[	:	] ==> simboloEspecial	(linha: 1 - coluna: 8)
+[	integer	] ==> palavraReservada	(linha: 1 - coluna: 10)
+[	;	] ==> simboloEspecial	(linha: 1 - coluna: 17)
+[	if	] ==> palavraReservada	(linha: 2 - coluna: 1)
+[	(	] ==> simboloEspecial	(linha: 2 - coluna: 4)
+[	a	] ==> identificador	(linha: 2 - coluna: 5)
+[	>	] ==> logico	(linha: 2 - coluna: 6)
+[	10	] ==> numero	(linha: 2 - coluna: 7)
+[	)	] ==> simboloEspecial	(linha: 2 - coluna: 9)
+[	then	] ==> palavraReservada	(linha: 2 - coluna: 11)
+[	b	] ==> identificador	(linha: 2 - coluna: 16)
+[	=	] ==> logico	(linha: 2 - coluna: 18)
+[	b	] ==> identificador	(linha: 2 - coluna: 20)
+[	+	] ==> operador	(linha: 2 - coluna: 22)
+[	1	] ==> numero	(linha: 2 - coluna: 24)
+[	;	] ==> simboloEspecial	(linha: 2 - coluna: 25)
+[	end.	] ==> palavraReservada	(linha: 3 - coluna: 0)
+
+
+Utilizando o código:
+begin
+	var a,b: integer;
+	var x,y: real;
+	if((x>y) AND (a>b)) then 
+	x = a;
+end.
+
+Obtemos:
+[	begin	] ==> palavraReservada	(linha: 0 - coluna: 0)
+[	var	] ==> palavraReservada	(linha: 1 - coluna: 1)
+[	a	] ==> identificador	(linha: 1 - coluna: 5)
+[	,	] ==> simboloEspecial	(linha: 1 - coluna: 6)
+[	b	] ==> identificador	(linha: 1 - coluna: 7)
+[	:	] ==> simboloEspecial	(linha: 1 - coluna: 8)
+[	integer	] ==> palavraReservada	(linha: 1 - coluna: 10)
+[	;	] ==> simboloEspecial	(linha: 1 - coluna: 17)
+[	var	] ==> palavraReservada	(linha: 2 - coluna: 1)
+[	x	] ==> identificador	(linha: 2 - coluna: 5)
+[	,	] ==> simboloEspecial	(linha: 2 - coluna: 6)
+[	y	] ==> identificador	(linha: 2 - coluna: 7)
+[	:	] ==> simboloEspecial	(linha: 2 - coluna: 8)
+[	real	] ==> palavraReservada	(linha: 2 - coluna: 10)
+[	;	] ==> simboloEspecial	(linha: 2 - coluna: 14)
+[	if	] ==> palavraReservada	(linha: 3 - coluna: 1)
+[	(	] ==> simboloEspecial	(linha: 3 - coluna: 3)
+[	(	] ==> simboloEspecial	(linha: 3 - coluna: 4)
+[	x	] ==> identificador	(linha: 3 - coluna: 5)
+[	>	] ==> logico	(linha: 3 - coluna: 6)
+[	y	] ==> identificador	(linha: 3 - coluna: 7)
+[	)	] ==> simboloEspecial	(linha: 3 - coluna: 8)
+[	AND	] ==> identificador	(linha: 3 - coluna: 10)
+[	(	] ==> simboloEspecial	(linha: 3 - coluna: 14)
+[	a	] ==> identificador	(linha: 3 - coluna: 15)
+[	>	] ==> logico	(linha: 3 - coluna: 16)
+[	b	] ==> identificador	(linha: 3 - coluna: 17)
+[	)	] ==> simboloEspecial	(linha: 3 - coluna: 18)
+[	)	] ==> simboloEspecial	(linha: 3 - coluna: 19)
+[	then	] ==> palavraReservada	(linha: 3 - coluna: 21)
+[	x	] ==> identificador	(linha: 4 - coluna: 1)
+[	=	] ==> logico	(linha: 4 - coluna: 3)
+[	a	] ==> identificador	(linha: 4 - coluna: 5)
+[	;	] ==> simboloEspecial	(linha: 4 - coluna: 6)
+[	end.	] ==> palavraReservada	(linha: 5 - coluna: 0)
+
+
+Utilizando o código:
+begin
+	var x:20;
+	var y:30;
+	var z:0; 
+	
+	while(x<=30) begin
+		z = z + 1;
+	end
+end.
+
+
+Obtemos:
+[	begin	] ==> palavraReservada	(linha: 0 - coluna: 0)
+[	var	] ==> palavraReservada	(linha: 1 - coluna: 1)
+[	x	] ==> identificador	(linha: 1 - coluna: 5)
+[	:	] ==> simboloEspecial	(linha: 1 - coluna: 6)
+[	20	] ==> numero	(linha: 1 - coluna: 7)
+[	;	] ==> simboloEspecial	(linha: 1 - coluna: 9)
+[	var	] ==> palavraReservada	(linha: 2 - coluna: 1)
+[	y	] ==> identificador	(linha: 2 - coluna: 5)
+[	:	] ==> simboloEspecial	(linha: 2 - coluna: 6)
+[	30	] ==> numero	(linha: 2 - coluna: 7)
+[	;	] ==> simboloEspecial	(linha: 2 - coluna: 9)
+[	var	] ==> palavraReservada	(linha: 3 - coluna: 1)
+[	z	] ==> identificador	(linha: 3 - coluna: 5)
+[	:	] ==> simboloEspecial	(linha: 3 - coluna: 6)
+[	0	] ==> numero	(linha: 3 - coluna: 7)
+[	;	] ==> simboloEspecial	(linha: 3 - coluna: 8)
+[	while	] ==> palavraReservada	(linha: 5 - coluna: 1)
+[	(	] ==> simboloEspecial	(linha: 5 - coluna: 6)
+[	x	] ==> identificador	(linha: 5 - coluna: 7)
+[	<=	] ==> logico	(linha: 5 - coluna: 8)
+[	30	] ==> numero	(linha: 5 - coluna: 10)
+[	)	] ==> simboloEspecial	(linha: 5 - coluna: 12)
+[	begin	] ==> palavraReservada	(linha: 5 - coluna: 14)
+[	z	] ==> identificador	(linha: 6 - coluna: 2)
+[	=	] ==> logico	(linha: 6 - coluna: 4)
+[	z	] ==> identificador	(linha: 6 - coluna: 6)
+[	+	] ==> operador	(linha: 6 - coluna: 8)
+[	1	] ==> numero	(linha: 6 - coluna: 10)
+[	;	] ==> simboloEspecial	(linha: 6 - coluna: 11)
+[	end	] ==> palavraReservada	(linha: 7 - coluna: 1)
+[	end.	] ==> palavraReservada	(linha: 8 - coluna: 0)
+
+
+
+Utilizando o código: (cenário de erro)
+begin
+	var x: integer; 
+	var z: integer;
+	
+	x = 10;
+	z = 100;
+	
+	while(x<100) begin
+		while(z>x) begin
+		x = x + 1;
+		z = [3];
+		end
+	end
+end.
+
+Obtemos:
+[	begin	] ==> palavraReservada	(linha: 0 - coluna: 0)
+[	var	] ==> palavraReservada	(linha: 1 - coluna: 1)
+[	x	] ==> identificador	(linha: 1 - coluna: 5)
+[	:	] ==> simboloEspecial	(linha: 1 - coluna: 6)
+[	integer	] ==> palavraReservada	(linha: 1 - coluna: 8)
+[	;	] ==> simboloEspecial	(linha: 1 - coluna: 15)
+[	var	] ==> palavraReservada	(linha: 2 - coluna: 1)
+[	z	] ==> identificador	(linha: 2 - coluna: 5)
+[	:	] ==> simboloEspecial	(linha: 2 - coluna: 6)
+[	integer	] ==> palavraReservada	(linha: 2 - coluna: 8)
+[	;	] ==> simboloEspecial	(linha: 2 - coluna: 15)
+[	x	] ==> identificador	(linha: 4 - coluna: 1)
+[	=	] ==> logico	(linha: 4 - coluna: 3)
+[	10	] ==> numero	(linha: 4 - coluna: 5)
+[	;	] ==> simboloEspecial	(linha: 4 - coluna: 7)
+[	z	] ==> identificador	(linha: 5 - coluna: 1)
+[	=	] ==> logico	(linha: 5 - coluna: 3)
+[	100	] ==> numero	(linha: 5 - coluna: 5)
+[	;	] ==> simboloEspecial	(linha: 5 - coluna: 8)
+[	while	] ==> palavraReservada	(linha: 7 - coluna: 1)
+[	(	] ==> simboloEspecial	(linha: 7 - coluna: 6)
+[	x	] ==> identificador	(linha: 7 - coluna: 7)
+[	<	] ==> logico	(linha: 7 - coluna: 8)
+[	100	] ==> numero	(linha: 7 - coluna: 9)
+[	)	] ==> simboloEspecial	(linha: 7 - coluna: 12)
+[	begin	] ==> palavraReservada	(linha: 7 - coluna: 14)
+[	while	] ==> palavraReservada	(linha: 8 - coluna: 2)
+[	(	] ==> simboloEspecial	(linha: 8 - coluna: 7)
+[	z	] ==> identificador	(linha: 8 - coluna: 8)
+[	>	] ==> logico	(linha: 8 - coluna: 9)
+[	x	] ==> identificador	(linha: 8 - coluna: 10)
+[	)	] ==> simboloEspecial	(linha: 8 - coluna: 11)
+[	begin	] ==> palavraReservada	(linha: 8 - coluna: 13)
+[	x	] ==> identificador	(linha: 9 - coluna: 2)
+[	=	] ==> logico	(linha: 9 - coluna: 4)
+[	x	] ==> identificador	(linha: 9 - coluna: 6)
+[	+	] ==> operador	(linha: 9 - coluna: 8)
+[	1	] ==> numero	(linha: 9 - coluna: 10)
+[	;	] ==> simboloEspecial	(linha: 9 - coluna: 11)
+[	z	] ==> identificador	(linha: 10 - coluna: 2)
+[	=	] ==> logico	(linha: 10 - coluna: 4)
+
+Exception in thread "main" java.lang.RuntimeException: Caracter inválido [ na linha 10, coluna 6
+	at br.com.brunoepedro.analisadorlexico.LexicalAnalyzer.yylex(LexicalAnalyzer.java:641)
+	at br.com.brunoepedro.analisadorlexico.PascalLexicalAnalyzer.main(PascalLexicalAnalyzer.java:19)
